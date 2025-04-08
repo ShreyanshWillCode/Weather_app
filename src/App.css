@@ -1,0 +1,173 @@
+body {
+  background: rgb(250, 218, 221); /* Light pink background */
+  background-size: cover; /* Ensures the background covers the entire screen */
+  background-position: center; /* Centers the background */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  overflow-y: auto; /* Allows scrolling */
+  margin: 0;
+  padding: 0;
+}
+
+h1.App-name {
+  position: relative;
+  text-align: center;
+  margin-top: 20px; /* Reduced margin */
+  font-size: 60pt;
+}
+
+.Weather-gif {
+  height: 180px;
+}
+
+div.Search-part {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-top: 50px; /* Reduced margin */
+  text-align: center;
+}
+
+input#City-name {
+  width: 100%;
+  max-width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.Search-btn {
+  width: 25%;
+  max-width: 70px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.Main-BOX {
+  display: block;
+  margin: 20px auto; /* Reduced margin */
+  text-align: center;
+  width: 90%;
+  max-width: 700px;
+  height: auto; /* Updated height */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+  backdrop-filter: blur(10px); /* Adds a blur effect */
+  box-shadow: 7px 7px #002D62;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.Cloud-head,
+.Weather-head,
+.max-tempid,
+.min-temp {
+  text-align: left;
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+#Location-name {
+  font-size: 40pt;
+}
+
+.temp {
+  display: inline-flex;
+  font-size: 40pt;
+}
+
+.Wind-speed {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Temp-idhead {
+  font-size: 34pt;
+}
+
+#Location-png {
+  height: 60px;
+  animation-name: Location;
+  animation-duration: 0.5s;
+}
+
+@keyframes Location {
+  from {
+    height: 20px;
+  }
+  to {
+    height: 60px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  body {
+    background-color: #F0F8FF;
+    overflow-y: hidden;
+  }
+  
+  .Weather-gif {
+    height: 180px;
+    position: absolute;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1.App-name {
+    font-size: 30pt;
+    margin: 20px 0;
+  }
+
+  .Search-part {
+    margin-top: 20px;
+  }
+
+  input#City-name {
+    max-width: 150px;
+    height: 40px;
+    border-radius: 10px;
+  }
+
+  .Search-btn {
+    max-width: 70px;
+    padding: 8px;
+    font-size: 12pt;
+    height: 40px;
+    border-radius: 8px;
+  }
+
+  .Main-BOX {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+  }
+
+  #Location-name {
+    font-size: 20pt;
+  }
+
+  .Cloud-head,
+  .Weather-head,
+  .max-tempid,
+  .min-temp {
+    font-size: 10pt;
+    padding-left: 10px;
+  }
+
+  .temp {
+    font-size: 13pt;
+  }
+
+  .Wind-speed {
+    margin-top: 10px;
+  }
+
+  .Weather-gif {
+    height: 80px;
+    position: absolute;
+  }
+}
