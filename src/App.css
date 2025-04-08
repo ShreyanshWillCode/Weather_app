@@ -1,9 +1,9 @@
 body {
-  background: rgb(250, 218, 221); /* Light pink background */
-  background-size: cover; /* Ensures the background covers the entire screen */
-  background-position: center; /* Centers the background */
-  background-repeat: no-repeat; /* Prevents the background from repeating */
-  overflow-y: auto; /* Allows scrolling */
+  background: rgb(250, 218, 221);
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  overflow-y: auto; 
   margin: 0;
   padding: 0;
 }
@@ -11,7 +11,7 @@ body {
 h1.App-name {
   position: relative;
   text-align: center;
-  margin-top: 20px; /* Reduced margin */
+  margin-top: 20px; 
   font-size: 60pt;
 }
 
@@ -23,7 +23,7 @@ div.Search-part {
   width: 100%;
   max-width: 1080px;
   margin: 0 auto;
-  margin-top: 50px; /* Reduced margin */
+  margin-top: 50px; 
   text-align: center;
 }
 
@@ -46,13 +46,13 @@ input#City-name {
 
 .Main-BOX {
   display: block;
-  margin: 20px auto; /* Reduced margin */
+  margin: 20px auto; 
   text-align: center;
   width: 90%;
   max-width: 700px;
-  height: auto; /* Updated height */
-  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
-  backdrop-filter: blur(10px); /* Adds a blur effect */
+  height: auto; 
+  background-color: rgba(255, 255, 255, 0.5); 
+  backdrop-filter: blur(10px); 
   box-shadow: 7px 7px #002D62;
   border: 2px solid black;
   padding: 20px;
