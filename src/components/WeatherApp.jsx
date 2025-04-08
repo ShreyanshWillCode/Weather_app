@@ -70,7 +70,7 @@ const WeatherApp = () => {
             </div>
             <div id="Main-box-id" className="Main-BOX">
                 <h2 id="Location-name">{weatherData.location}</h2>
-                <img src="/Location.svg" alt="Location Icon" id="Location-png" />
+                <img src="/Location1.png" alt="Location Icon" id="Location-png" />
                 <h4 className="Cloud-head">Clouds: <p id="Clouds" style={{ display: 'inline-flex', paddingLeft: '5px' }}>{weatherData.clouds}</p></h4>
                 <h4 id="Weather-id" className="Weather-head">Humidity: <p id="Weather" style={{ display: 'inline-flex' }}>{weatherData.humidity}</p></h4>
                 <h4 className="max-tempid">max_temp: <p id="max-temp" style={{ display: 'inline-flex' }}>{weatherData.maxTemp}</p></h4>
